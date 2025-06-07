@@ -6,6 +6,10 @@
   font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h2 {
   margin: 5%;
   font-size: clamp(1.1rem, calc(0.9rem + 0.625vw), 1.6rem);
@@ -158,24 +162,6 @@ section {
   border: none;
   border-radius: 9999px;
 }
-
-.calenderbtn {
-  padding: 1% 10% 1% 10%;
-  background-color: #4682B4;
-  color: #fff;
-  text-align: center;
-  border: none;
-  border-radius: 9999px;
-}
-
-.calenderbtn:hover {
-  padding: 1% 10% 1% 10%;
-  background-color: #D6EBFF;
-  color: #000;
-  text-align: center;
-  border: none;
-  border-radius: 9999px;
-}
 /* 全体用ここまで */
 
 /* *********************************************** */
@@ -184,6 +170,11 @@ section {
   margin-top: 0;
   margin-bottom: 20px;
 }
+
+.nav {
+  display: none;
+}
+
 /* ヘッダー用ここまで */
 
 
@@ -192,6 +183,28 @@ section {
   margin-top: 0;
   margin-bottom: 0;
   background-color: #D6EBFF;
+}
+
+.pagetop {
+    height: 30px;
+    width: 30px;
+    right: 10px;
+    bottom: 15px;
+    background: #fff;
+    border: solid 2px #000;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pagetop__arrow {
+    height: 10px;
+    width: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    transform: translateY(20%) rotate(-45deg);
 }
 
 .copyright > small {
@@ -356,6 +369,11 @@ section {
 .treat > img {
   width: 50%;
 }
+
+.treat_sp {
+  display: none;
+}
+
 /* 診療概要用ここまで */
 
 /* ブログ・お知らせ用ここから */
@@ -505,6 +523,13 @@ section {
   padding: 1% 3%;
   background-color: #D6EBFF;
   border-radius: 9999px;
+}
+
+.clcenter {
+  display: none;
+}
+.clcentercont {
+  display: none;
 }
 /* 医院用ここまで */
 
@@ -705,6 +730,19 @@ section {
   margin: 0;
   padding: 0 0 0 1%;
 }
+
+.newsblogtitle {
+  width: 80%;
+  padding-left: 3%;
+  background-color: #D6EBFF;
+  align-content: center;
+  text-align: left;
+}
+
+.newsblogtitle > p {
+  text-align: left;
+  padding: 1%;
+}
 /* *******お知らせ・ブログページここまで*********** */
 
 /* *******お知らせ・ブログ詳細ページここから*********** */
@@ -769,4 +807,783 @@ section {
 }
 /* *******プライバシーページここまで*********** */
 
-/* *******スマホ・タブレット用*********** */
+/* ★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★ */
+/* *******スマホ*********** */
+@media only screen and (max-width: 767px) {
+
+/* 全体用ここから */
+* {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-size: clamp(0.9rem, calc(0.7rem + 0.625vw), 1.4rem);
+}
+
+h2 {
+  margin: 5%;
+  font-size:20px;
+}
+
+
+h3 {
+  margin: 5%;
+  font-size: 18px;
+}
+
+p {
+  margin: 3%;
+  font-size: 15px;
+}
+
+a {
+  text-decoration:none;
+  color: #000;
+  margin: auto;
+  padding: auto;
+  font-size: 15px;
+}
+
+.container_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D6EBFF;
+  padding: 0 10% 0 10%;
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #D6EBFF;
+  padding: 0 10% 0 10%;
+  margin: -5px 0 0 0;
+}
+
+.logo {
+  background-color: #fff;
+  width: 30%;
+}
+
+.logo > a > img {
+  padding-top: 5%;
+  width: 80%
+}
+
+.menu {
+  display: none;
+}
+
+.navlist {
+  display: none;
+}
+
+section {
+  margin: 10%;
+}
+
+.btn {
+  margin: 10% auto 30% auto;
+}
+
+.more {
+  padding: 1% 3% 1% 3%;
+  background-color: #4682B4;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.more:hover {
+  padding: 1% 3% 1% 3%;
+  background-color: #D6EBFF;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.calender {
+  padding: 1% 3% 1% 3%;
+  background-color: #4682B4;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.calender:hover {
+  padding: 1% 3% 1% 3%;
+  background-color: #D6EBFF;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.prev {
+  padding: 1% 20% 1% 20%;
+  background-color: #4682B4;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.prev:hover {
+  padding: 1% 20% 1% 20%;
+  background-color: #D6EBFF;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.next {
+  padding: 1% 20% 1% 20%;
+  background-color: #4682B4;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+
+.next:hover {
+  padding: 1% 20% 1% 20%;
+  background-color: #D6EBFF;
+  color: #000;
+  text-align: center;
+  border: none;
+  border-radius: 9999px;
+  font-size: 15px;
+}
+/* 全体用ここまで */
+
+/* *********************************************** */
+/* ヘッダー用ここから */
+.header {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* ハンバーガーメニューここから */
+.nav {
+  display: flex;
+}
+
+/* チェックボックスを非表示にする */
+.drawer_hidden {
+  display: none;
+}
+
+/* ハンバーガーアイコンの設置スペース */
+.drawer_open {
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 9998;
+  cursor: pointer;
+}
+
+/* ハンバーガーメニューのアイコン */
+.drawer_open span,
+.drawer_open span:before,
+.drawer_open span:after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background: #333;
+  transition: 0.5s;
+  position: absolute;
+}
+
+/* 三本線の一番上の棒の位置調整 */
+.drawer_open span:before {
+  bottom: 6px;
+}
+
+/* 三本線の一番下の棒の位置調整 */
+.drawer_open span:after {
+  top: 6px;
+}
+
+/* アイコンがクリックされたら真ん中の線を透明にする */
+#drawer_input:checked ~ .drawer_open span {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* アイコンがクリックされたらアイコンが×印になように上下の線を回転 */
+#drawer_input:checked ~ .drawer_open span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#drawer_input:checked ~ .drawer_open span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+  
+/* メニューのデザイン*/
+.nav_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%; /* メニューを画面の外に飛ばす */
+  z-index: 99;
+  background: #D6EBFF;
+  transition: .5s;
+}
+
+/* メニュー黒ポチを消す */
+.nav_list {
+  list-style: none;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* メニュー表示 */
+.nav_list li {
+  padding: 3%;
+  list-style: none;
+  font-weight: bold;
+  text-decoration:none;
+  color: #000;
+  margin: 3% auto;
+  padding: 1% auto;
+  background-color: #fff;
+}
+
+.nav_list a {
+  font-weight: bold;
+  text-decoration:none;
+  color: #000;
+  font-size: 15px;
+}
+
+/* アイコンがクリックされたらメニューを表示 */
+#drawer_input:checked ~ .nav_content {
+  left: 0;/* メニューを画面に入れる */
+}
+/* ハンバーガーメニュー */
+/* ヘッダー用ここまで */
+
+/* フッター用ここから */
+.footer div {
+  margin: 2% auto 0 auto;
+  padding: 1% auto;
+}
+/* フッター用ここまで */
+/* *********************************************** */
+
+/* *******トップページここから********************** */
+/* ファーストビュー用ここから */
+.firstview_top {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.firstview {
+  margin: 0 auto;
+  padding: 0;
+}
+
+.firstview div {
+  height: 100%;
+}
+
+.firstview img {
+  height: 100%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  text-align: center;
+  display: none;
+}
+
+.slider {
+  text-align: center;
+}
+
+.slider div {
+  width: 100%;
+}
+
+.slider img {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.catchcopy {
+  position: absolute;
+  background-color: #fff;
+  bottom: 1em;
+  width: 95%;
+}
+
+.catchcopy > p {
+  font-size: 10px;
+}
+/* ファーストビュー用ここまで */
+
+/* 予約用ボタンここから */
+.reserve {
+  display: none;
+}
+/* 予約用ボタンここまで */
+
+/* コンセプト用ここから */
+#concept {
+  display: block;
+}
+
+.left {
+  display: none;
+}
+
+.center {
+  width: 100%;
+  margin-bottom: 70px;
+  background-image: url(../img/atmosleft.png);
+  background-color:rgba(255,255,255,0.7);
+  background-blend-mode:lighten;
+}
+
+.center h2 {
+  font-size: 20px;
+}
+
+.center > p {
+  font-size: 13px;
+  margin: 5%;
+}
+
+.right {
+  display: none;
+}
+/* コンセプト用ここまで */
+
+/* 医院と医師概要用ここから */
+.dcintro {
+  display: block;
+  font-size: 20px;
+}
+
+.dcintro div {
+  font-size: 20px;
+}
+
+.intro {
+  display: block;
+  margin: 5%;
+}
+
+.intro > img {
+  width: 80%;
+}
+
+.intro > p {
+  width: 100%;
+  align-content: center;
+  margin-bottom: 15px;
+}
+/* 医院と医師概要用ここまで */
+
+/* 診療概要用ここから */
+.treat {
+  display: none;
+}
+
+.treat_sp {
+  display: block;
+  margin: 5%;
+}
+
+.treat_sp > p {
+  width: 100%;
+  align-content: center;
+}
+
+.treat_sp > img {
+  width: 80%;
+}
+/* 診療概要用ここまで */
+
+/* ブログ・お知らせ用ここから */
+.blog h2 {
+  margin-bottom: 40px;
+}
+
+.newslist {
+  display: block;
+  text-align: center;
+  margin: 5% auto;
+}
+
+.newsicon {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.newstitle {
+  width: 100%;
+  padding: 1% 1%;
+  background-color: #D6EBFF;
+  align-content: center;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 70px;
+}
+/* ブログ・お知らせ用ここまで */
+
+/* アクセス用ここから */
+.access {
+  display: block;
+  margin: 5%;
+}
+
+.access > p {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.access > iframe {
+  width: 100%;
+}
+/* アクセス用ここまで */
+/* *******トップページここまで********************** */
+
+/* *******医院と医師ページここから********************** */
+/* 医院用ここから */
+.clvw {
+  margin-bottom: 15%;
+}
+
+.clvw > h2 {
+  background-color: #ffffff;
+  padding: 0;
+}
+
+.clleft {
+  display: none;
+}
+
+.clright {
+  display: none;
+}
+
+.clrightcont {
+  display: none;
+}
+
+.rightcont {
+  display: none;
+}
+
+.clleftcont > p {
+  display: none;
+}
+
+.leftcont {
+  display: none;
+}
+
+.clcenter {
+  display: block;
+}
+
+.clcenter  h3 {
+  margin-bottom: 30px;
+}
+
+.clcenter  p {
+  text-align: left;
+  margin-bottom: 60px;
+}
+
+.clcentercont {
+  display: block;
+}
+
+.centercont > h2 {
+  width: 100%;
+  background-color: #D6EBFF;
+  margin: 60px auto 20px auto;
+  text-align: center;
+  border-radius: 9999px;
+}
+
+.centercont > img {
+  width: 80%;
+  background-color: #D6EBFF;
+  margin: 10px auto;
+}
+
+/* 医院用ここまで */
+
+/* 医師用ここから */
+.drint {
+  display: block;
+}
+
+.drint > img {
+  width: 80%;
+}
+
+.drintcont {
+  margin: 30px auto;
+  width: 100%;
+}
+
+.drintcont > p {
+  text-align: left;
+  padding: 0;
+}
+
+.staff {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+}
+
+.staff > h3 {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 30px 0;
+}
+
+.staff > p {
+  background-color: #D6EBFF;
+  width: 100%;
+  padding: 3%;
+  text-align: left;
+  margin: 0;
+}
+/* 医師用ここまで */
+/* *******医院と医師ページここまで********************** */
+
+/* *******診療ページここから********************** */
+/* 診療の流れここから */
+.steptitle {
+  width: 20%;
+  text-align: center;
+  margin:10% 0 0 10%;
+}
+
+.stepcircle {
+  width: 40px;
+  height: 40px;
+  background-color: #D6EBFF;
+  border-radius: 50%;
+}
+
+.stepcircle span {
+  width: 40px;
+  height: 40px;
+  background-color: #D6EBFF;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+}
+
+.stepline {
+  display: none;
+}
+
+.text {
+  width: 80%;
+}
+
+.title {
+  font-size: 15px;
+  text-align: left;
+  margin:10% 0 0 0;
+  font-weight: bold;
+}
+
+.steptxt {
+  width: 100%;
+  height: 80px;
+  text-align: left;
+}
+
+.txt {
+  font-size: 12px;
+}
+/* 診療の流れここまで */
+
+/* 診察内容ここから */
+.iconcont {
+  display: flex;
+}
+
+.icon {
+  margin-top: 8%;
+  width: 50%;
+}
+
+.icon img {
+  width: 50%;
+}
+
+.trcont {
+  width: 100%;
+}
+
+.trcont h3 {
+  width: 100%;
+  text-align: left;
+  margin: 10% 2%;
+  padding: 3%;
+  background-color: #D6EBFF;
+}
+
+.trcont p {
+  font-size: 15px;
+  text-align: left;
+  margin: 1% 0 15% 0;
+}
+/* 診察内容ここまで */
+
+/* 診察時間ここから */
+.tabletime {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 100px;
+}
+
+.biz-hour {
+  display: block;
+  border-collapse: collapse;
+  overflow-x: scroll;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.biz-hour th, .biz-hour td {
+  padding: 12.5px;
+  text-align: center;
+  border: 1px solid #000;
+  margin: 0 auto;
+}
+
+.biz-hour th {
+  background-color: #D6EBFF;
+  font-weight: normal;
+  margin: 0 auto;
+  font-size: 11px;
+}
+
+.biz-hour th.sat {
+  color: #3db2da;
+}
+
+.biz-hour th.sun {
+  color: #e66a6a;
+}
+/* 診察時間ここまで */
+/* *******診療ページここまで********************** */
+/* *******お知らせ・ブログページここから*********** */
+.news {
+  display: block;
+  align-items: center;
+  margin: 5%;
+}
+
+.newsimg {
+  width: 100%;
+  margin-top: 60px;
+}
+
+.newsimg > a > img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+.newsblogtitle {
+  background-color: #fff;
+  margin: 20px auto;
+}
+
+.newsblogtitle > p {
+  text-align: center;
+  padding: 20px 10px;
+  margin: 10px auto;
+  width: 100%;
+  background-color: #D6EBFF;
+}
+
+/* *******お知らせ・ブログページここまで*********** */
+
+/* *******お知らせ・ブログ詳細ページここから*********** */
+.detail {
+  display: block;
+}
+
+.detail > img {
+  width: 80%;
+  margin: 0;
+}
+.detail > p {
+  text-align: left;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.cat {
+  width: 100%;
+  text-align: center;
+}
+
+.btnpn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.btnpnleft{
+  width: 50%;
+}
+
+.btnpnright{
+  width: 50%;
+}
+/* *******お知らせ・ブログ詳細ページここまで*********** */
+/* *******プライバシーページここから*********** */
+.pvtitle {
+  text-align: center;
+  background-color: #D6EBFF;
+  padding: 5% 0;
+}
+
+.pvcont {
+  text-align: left;
+  padding: 5% 0;
+  margin-bottom: 50px;
+}
+/* *******プライバシーページここまで*********** */
+
+}

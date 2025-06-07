@@ -43,6 +43,23 @@
         <a href="treat.html" class="navlist">診療</a>
         <a href="news.html" class="navlist">お知らせ</a>
       </div>
+
+      <!-- ハンバーガーメニュー部分 -->
+      <div class="nav">
+        <!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
+        <input id="drawer_input" class="drawer_hidden" type="checkbox">
+        <!-- ハンバーガーアイコン -->
+        <label for="drawer_input" class="drawer_open"><span></span></label>
+        <!-- メニュー -->
+        <nav class="nav_content">
+          <ul class="nav_list">
+            <li class="nav_item"><a href="clinic.html">医院と医師</a></li>
+            <li class="nav_item"><a href="treat.html">診療</a></li>
+            <li class="nav_item"><a href="news.html">お知らせ</a></li>
+          </ul>
+        </nav>
+      </div>
+
     </div>
   </header>
 <!-- トップページヘッダーここまで -->
@@ -76,6 +93,10 @@
         <div class="treat">
           <p>あなたに合った治療を提供いたします<br>安心してご利用ください</p>
           <img src="img/overview2.png" alt="治療場面">
+        </div>
+        <div class="treat_sp">
+          <img src="img/overview2.png" alt="治療場面">
+          <p>あなたに合った治療を提供いたします<br>安心してご利用ください</p>
         </div>
         <div class="btn"><a class="more" href="treat.html">詳細を見る</a></div>
       </div>
@@ -116,7 +137,7 @@
 
 <!-- フッターここまで -->
   <footer class="footer">
-    <div class="container">
+    <div class="container_top">
       <div class="logo">
         <a href="#"><img src="img/logo2.svg" alt="企業ログ"></a>
       </div>
